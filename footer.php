@@ -124,7 +124,7 @@
                             <a href="<?php the_field('facebook_link'); ?>" class="footer__social-item">
                                 <img src="<?php the_field('facebook', 2); ?>" alt="facebook">
                             </a>
-                            <a href="<?php the_field('youtube_link'); ?>" class="footer__social-item">
+                            <a href="<?php the_field('youtube_link') ?>" class="footer__social-item">
                                 <img src="<?php the_field('youtube', 2); ?>" alt="youtube">
                             </a>
                         </div>
@@ -134,13 +134,13 @@
                             <div class="footer__contacts-item">
                                 <img src="<?php echo bloginfo('template_url');?>/assets/img/icons/svg/phone.svg" alt="телефон" class="footer__contacts-logo">
                                 <div class="footer__contacts-tel">
-                                    <a href="<?php the_field('phone_1'); ?>"><?php the_field('phone_1'); ?></a>
-                                    <a href="<?php the_field('phone_2'); ?>"><?php the_field('phone_2'); ?></a>
+                                    <a href="<?php the_field('phone_1', 2); ?>"><?php the_field('phone_1', 2); ?></a>
+                                    <a href="<?php the_field('phone_2', 2); ?>"><?php the_field('phone_2', 2); ?></a>
                                 </div>
                             </div>
                             <div class="footer__contacts-item">
                                 <img src="<?php echo bloginfo('template_url');?>/assets/img/icons/svg/pointer.svg" alt="указатель" class="footer__contacts-logo">
-                                <address><?php the_field('address'); ?></address>
+                                <address><?php the_field('address', 2); ?></address>
                             </div>
                         </div>
                     </div>

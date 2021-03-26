@@ -6,4 +6,5 @@
     }
 
     add_theme_support('custom-logo'); // разрешение для изменения логотипа
+    add_theme_support('post-thumbnails'); // разрешение 
 ?>

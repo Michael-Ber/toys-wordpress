@@ -37,14 +37,14 @@
                             </div>
                             <div class="header__contacts-item">
                                 <img src="<?php echo bloginfo('template_url');?>/assets/img/icons/svg/phone.svg" alt="телефон" class="header__contacts-logo">
-                                <div class="header__contacts-tel">
-                                    <a href="<?php the_field('phone_1'); ?>"><?php the_field('phone_1'); ?></a>
-                                    <a href="<?php the_field('phone_2'); ?>"><?php the_field('phone_2'); ?></a>
-                                </div>
+                                    <div class="header__contacts-tel">
+                                        <a href="<?php the_field('phone_1', 2); ?>"><?php the_field('phone_1', 2); ?></a>
+                                        <a href="<?php the_field('phone_2', 2); ?>"><?php the_field('phone_2', 2); ?></a>
+                                    </div>
                             </div>
                             <div class="header__contacts-item">
                                 <img src="<?php echo bloginfo('template_url');?>/assets/img/icons/svg/pointer.svg" alt="указатель" class="header__contacts-logo">
-                                <address><?php the_field('address'); ?></address>
+                                <address><?php the_field('address', 2); ?></address>
                             </div>
                         </div>
                     </div>
