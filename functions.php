@@ -10,6 +10,20 @@
 
     add_theme_support('custom-logo'); // разрешение для изменения логотипа
     add_theme_support('post-thumbnails'); // разрешение 
+    add_theme_support('menus'); // разрешение для создания меню
+
+    add_filter('nav_menu_link_attributes', 'filter_nav_menu_link_attributes', 10, 3);
+
+    function filter_nav_menu_link_attributes($atts, $item, $args) {
+        if($args -> menu == 'Main') {
+            $atts['class'] = 'header__nav-item'; // меняем атрибут class у li
+
+            if($item -> current) {
+                $atts['class'] .= ' header__nav-item-active'; // пробел обязательно чтобы классы не слились
+            }
+        }
+        return $atts;
+    }
 
     // function my_acf_google_map_api($api) {
     //     $api['key'] = 'AIzaSyBYv3uLW6LOmRCRX7Wt0VVPVb7xLmcUvdE';

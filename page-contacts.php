@@ -9,12 +9,12 @@ Template Name: Контакты и отзывы
 ?>
 
 <div class="contacts">
-    <h1 class="title"><?php the_field('findus_title', 2); ?></h1>
+    <h1 class="title"><?php the_field('findus_title'); ?></h1>
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <div class="contacts__descr underlined">
-                    <?php the_field('findus_text', 2); ?>
+                    <?php the_field('findus_text'); ?>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -130,7 +130,7 @@ Template Name: Контакты и отзывы
                     </div>
                     <div class="contacts__mail">
                         Или напишите нам на почту
-                        <a href="mailto:<?php the_field('email', 2); ?>"><?php the_field('email', 2); ?></a>
+                        <a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
                     </div>
                 </div>
             </div>

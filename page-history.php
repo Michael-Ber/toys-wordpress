@@ -9,19 +9,19 @@ Template Name: Наша история
 ?>
 <div class="aboutus">
     <div class="container">
-        <h1 class="title"><?php the_field('title_history', 2); ?></h1>
+        <h1 class="title"><?php the_field('title_history'); ?></h1>
         <div class="row">
             <div class="col-lg-6">
                 <div class="subtitle">
-                    <?php the_field('history-wonder_title', 2); ?>
+                    <?php the_field('history-wonder_title'); ?>
                 </div>
                 <div class="aboutus__text">
-                    <?php the_field('history-wonder_text', 2); ?>
+                    <?php the_field('history-wonder_text'); ?>
                 </div>
             </div>
             <div class="col-lg-6">
                 <?php  
-                    $image = get_field('history-wonder_img', 2);
+                    $image = get_field('history-wonder_img');
                     if(!empty($image)): ?>
                         <img
                         class="aboutus__img" 
@@ -35,7 +35,7 @@ Template Name: Наша история
         <div class="row">
             <div class="col-lg-6">
                 <?php 
-                    $image = get_field('history-quality_img', 2);
+                    $image = get_field('history-quality_img');
                     if(!empty($image)): ?>
                         <img
                         class="aboutus__img" 
@@ -46,10 +46,10 @@ Template Name: Наша история
             </div>
             <div class="col-lg-6">
                 <div class="subtitle">
-                    <?php the_field('history-quality_title', 2); ?>
+                    <?php the_field('history-quality_title'); ?>
                 </div>
                 <div class="aboutus__text">
-                    <?php the_field('history-quality_text', 2); ?>
+                    <?php the_field('history-quality_text'); ?>
                 </div>
             </div>
         </div>
@@ -57,15 +57,15 @@ Template Name: Наша история
         <div class="row">
             <div class="col-lg-6">
                 <div class="subtitle">
-                    <?php the_field('history-tech_title', 2); ?>
+                    <?php the_field('history-tech_title'); ?>
                 </div>
                 <div class="aboutus__text">
-                    <?php the_field('history-tech_text', 2); ?>
+                    <?php the_field('history-tech_text'); ?>
                 </div>
             </div>
             <div class="col-lg-6">
                 <?php 
-                    $image = get_field('history-tech_img', 2);
+                    $image = get_field('history-tech_img');
                     if(!empty($image)): ?>
                         <img
                         class="aboutus__img" 
