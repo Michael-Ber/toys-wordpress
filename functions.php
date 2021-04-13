@@ -21,6 +21,9 @@
             if($item -> current) {
                 $atts['class'] .= ' header__nav-item-active'; // пробел обязательно чтобы классы не слились
             }
+            if($item -> ID == 189 && (in_category('toys') || in_category('edu_toys'))) {
+                $atts['class'] .= ' header__nav-item-active';
+            }
         }
         return $atts;
     }
